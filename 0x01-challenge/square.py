@@ -4,8 +4,8 @@
 
 class Square():
     """Object square"""
-    __width = 0
-    __height = 0
+    width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
         """initialize data"""
@@ -16,15 +16,15 @@ class Square():
         """ Area of the square """
         # width was changed to height
         # (w * w) => (w * h)
-        return self.__width * self.__height
+        return self.width * self.height
 
     def PermiterOfMySquare(self):
         """ Perimeter of the square """
-        return (self.__width * 2) + (self.__height * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ Informal string """
-        return "{}/{}".format(self.__width, self.__height)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
